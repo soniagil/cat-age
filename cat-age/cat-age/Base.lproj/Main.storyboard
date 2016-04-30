@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cat_age" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdm-QU-ApO">
+                                <rect key="frame" x="123" y="134" width="101" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="9f0-hK-Xcg"/>
+                                    <constraint firstAttribute="width" constant="101" id="Y3d-47-kEE"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Calcular"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IOd-zw-xgC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSn-Pq-UCD">
+                                <rect key="frame" x="125" y="82" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="C0V-Ox-oYX"/>
+                                    <constraint firstAttribute="height" constant="30" id="Y5y-aX-0e7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9Y-2b-eiU">
+                                <rect key="frame" x="98" y="259" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="lEX-lV-aac"/>
+                                    <constraint firstAttribute="height" constant="150" id="lrK-Bk-QZX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVF-jS-gYx">
+                                <rect key="frame" x="6" y="173" width="335" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="84" id="2cg-0u-SAd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="335" id="FKX-S2-93J"/>
+                                    <constraint firstAttribute="width" constant="335" id="Hya-aI-nTH"/>
+                                    <constraint firstAttribute="height" constant="84" id="evb-km-7dO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I9Y-2b-eiU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5nF-Zo-HUJ"/>
+                            <constraint firstItem="VSn-Pq-UCD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="82" id="6DE-H3-yRc"/>
+                            <constraint firstItem="mVF-jS-gYx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="172" id="FkK-pR-YoO"/>
+                            <constraint firstItem="I9Y-2b-eiU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="259" id="GJe-9m-sRi"/>
+                            <constraint firstItem="VSn-Pq-UCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ivt-cD-CPU"/>
+                            <constraint firstItem="mVF-jS-gYx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="172" id="JlY-aH-64Y"/>
+                            <constraint firstItem="Qdm-QU-ApO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gkJ-En-FnJ"/>
+                            <constraint firstItem="mVF-jS-gYx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iH3-N4-APE"/>
+                            <constraint firstItem="Qdm-QU-ApO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="134" id="kpC-Vn-nfD"/>
+                            <constraint firstItem="mVF-jS-gYx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vT5-Ul-xaW"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btCalculate" destination="Qdm-QU-ApO" id="F8v-2h-jtO"/>
+                        <outlet property="imageCat" destination="I9Y-2b-eiU" id="K8R-vb-mRv"/>
+                        <outlet property="txtAge" destination="VSn-Pq-UCD" id="9oL-WD-jil"/>
+                        <outlet property="txtResult" destination="mVF-jS-gYx" id="B6Q-Om-Zl2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="564.5" y="478.5"/>
         </scene>
     </scenes>
 </document>
