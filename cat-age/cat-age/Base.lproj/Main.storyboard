@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="84" id="xX6-Ma-WlD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSn-Pq-UCD">
@@ -66,7 +66,7 @@
                                     <constraint firstAttribute="height" constant="28" id="HPR-eN-ccQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cat name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KK3-Ck-Fwl">
@@ -80,17 +80,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your cat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dH-Yw-Llz">
-                                <rect key="frame" x="0.0" y="28" width="375" height="48"/>
-                                <color key="backgroundColor" red="0.098039215686274508" green="0.7686274509803922" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="ADK-1k-6DU"/>
-                                    <constraint firstAttribute="width" constant="375" id="r7O-vX-b3D"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="px9-Mx-dpf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <color key="barTintColor" red="0.098039215686274508" green="0.7686274509803922" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="How old is your cat?" id="ysT-Uv-Dak"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -100,16 +99,16 @@
                             <constraint firstItem="VSn-Pq-UCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DhH-8C-rs9"/>
                             <constraint firstItem="VSn-Pq-UCD" firstAttribute="top" secondItem="KK3-Ck-Fwl" secondAttribute="bottom" constant="19" id="EI8-Rg-Hty"/>
                             <constraint firstItem="Qdm-QU-ApO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="234" id="LZB-ss-IpC"/>
-                            <constraint firstItem="3dH-Yw-Llz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="28" id="Zyh-mc-iP9"/>
                             <constraint firstItem="mVF-jS-gYx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cDA-09-603"/>
+                            <constraint firstItem="px9-Mx-dpf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cbN-J5-r0P"/>
+                            <constraint firstItem="px9-Mx-dpf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dD0-bC-Ayi"/>
                             <constraint firstItem="I9Y-2b-eiU" firstAttribute="top" secondItem="mVF-jS-gYx" secondAttribute="bottom" constant="16" id="fek-TZ-Q8p"/>
                             <constraint firstItem="Qdm-QU-ApO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gkJ-En-FnJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="px9-Mx-dpf" secondAttribute="trailing" constant="-20" id="hNZ-hI-47z"/>
                             <constraint firstItem="Qdm-QU-ApO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="234" id="kpC-Vn-nfD"/>
                             <constraint firstItem="wrO-hc-zVu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lri-9A-SnM"/>
                             <constraint firstItem="I9Y-2b-eiU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pE6-B0-L49"/>
                             <constraint firstItem="mVF-jS-gYx" firstAttribute="top" secondItem="Qdm-QU-ApO" secondAttribute="bottom" constant="19" id="uTA-zr-x18"/>
-                            <constraint firstItem="KK3-Ck-Fwl" firstAttribute="top" secondItem="3dH-Yw-Llz" secondAttribute="bottom" constant="32" id="vJ2-Wg-rAU"/>
-                            <constraint firstItem="3dH-Yw-Llz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vsW-ba-MTr"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
